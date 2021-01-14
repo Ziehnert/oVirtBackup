@@ -30,6 +30,12 @@ sudo apt -y install python3-pip
 sudo yum install --assumeyes python3-pip
 ```
 
+### Requirements
+
+```
+pip3 install -r requirements.txt
+```
+
 [http://www.ovirt.org/Python-sdk](http://www.ovirt.org/Python-sdk)
 
 ## Usage
