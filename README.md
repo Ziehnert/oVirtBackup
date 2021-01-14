@@ -10,7 +10,7 @@ This is a tool, written in Python, to make **online** fullbackup's of a VM which
 
 **Debian based distros:**
 ```
-sudo apt -y install python3 -y
+sudo apt -y install python3
 ```
 
 **CentOS:**
@@ -22,7 +22,7 @@ sudo yum install --assumeyes python3
 
 **Debian based Distros:**
 ```
-sudo apt -y install python3-pip -y
+sudo apt -y install python3-pip
 ```
 
 **CentOS:**
