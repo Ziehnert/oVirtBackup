@@ -2,7 +2,7 @@
 
 This is a tool, written in Python, to make **online** fullbackup's of a VM which runs in an oVirt environment.
 
-**WARNING: THis was edited for python3 and oVirt4.3.**
+**HINT: This was updated for python3 and oVirt4.3.**
 
 ## Requirements
 
@@ -96,7 +96,7 @@ Set permissions to config.cfg only for the needed user (chmod 600 config.cfg).
 
 ## TODO's
 
-* When the ovirtsdk supports exporting a snapshot directly to a domain, the step of a VM creation can be removed to save some disk space during backup
+* automatic VM clone deletion
 
 ## Useful links:
 
