@@ -6,8 +6,29 @@ This is a tool, written in Python, to make **online** fullbackup's of a VM which
 
 ## Requirements
 
-It is necessary to install the oVirt Python-sdk.
-In addition when running Pyhon < 2.7 you need you install argparse.
+###Python3
+
+**Debian based distros:**
+```
+sudo apt -y install python3 -y
+```
+
+**CentOS:**
+```
+sudo yum install --assumeyes python3
+```
+
+###pip3
+
+**Debian based Distros:**
+```
+sudo apt -y install python3-pip -y
+```
+
+**CentOS:**
+```
+sudo yum install --assumeyes python3-pip
+```
 
 [http://www.ovirt.org/Python-sdk](http://www.ovirt.org/Python-sdk)
 
