@@ -2,12 +2,33 @@
 
 This is a tool, written in Python, to make **online** fullbackup's of a VM which runs in an oVirt environment.
 
+**WARNING: THis was edited for python3 and oVirt4.3.**
+
 ## Requirements
 
-This release was tested on oVirt 4.3
+### Python3
 
-It is necessary to install the oVirt Python-sdk.
-In addition when running Pyhon < 2.7 you need you install argparse.
+**Debian based distros:**
+```
+sudo apt -y install python3
+```
+
+**CentOS:**
+```
+sudo yum install --assumeyes python3
+```
+
+### pip3
+
+**Debian based Distros:**
+```
+sudo apt -y install python3-pip
+```
+
+**CentOS:**
+```
+sudo yum install --assumeyes python3-pip
+```
 
 [http://www.ovirt.org/Python-sdk](http://www.ovirt.org/Python-sdk)
 
@@ -31,27 +52,6 @@ Please avoid Cirillic symbols in the configuration otherwise you will get an exc
 * Delete previous backups (if set)
 * Export the VM to the NFS share
 * Delete the VM
-
-## Installation
-
-Environment:
-
-* CentOS 7.9.2009
-* selinux enforcing
-* Python 2.7.5
-
-```console
-git clone https://github.com/wefixit-AT/oVirtBackup.git /opt/oVirtBackup.git
-yum install https://resources.ovirt.org/pub/yum-repo/ovirt-release43.rpm
-yum install python-ovirt-engine-sdk4
-yum install python-configparser
-mkdir /etc/oVirtBackup
-cp /opt/oVirtBackup.git/config_example.cfg /etc/oVirtBackup/config.cfg
-```
-
-Prepare /etc/oVirtBackup/config.cfg
-
-	/opt/oVirtBackup.git/backup.py -c /etc/oVirtBackup/config.cfg
 
 ## Useful tips
 
